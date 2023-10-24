@@ -4,12 +4,24 @@ public class Animal {
     private double height;
     private double weight;
 
+    private static int count = 0; // 记录类被实例化多少次
+
     public Animal() {
+        Animal.count++;
     }
 
     public Animal(double height, double weight) {
         this.height = height;
         this.weight = weight;
+        Animal.count++;
+    }
+
+    public static int getCount() {
+        return count;
+    }
+
+    public static void setCount(int count) {
+        Animal.count = count;
     }
 
     public void setHeight(double h) {
