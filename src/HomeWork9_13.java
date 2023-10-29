@@ -6,7 +6,7 @@ public class HomeWork9_13 {
         words();
     }
     public static void words() {
-        String poemArr[] = {
+        String[] poemArr = {
                 "青青园中葵, 朝露待日晞。",
                 "阳春布德泽，万物生光辉。",
                 "常恐秋节至，焜黄华叶衰。",
@@ -14,8 +14,8 @@ public class HomeWork9_13 {
                 "少壮不努力，老大徒伤悲。"
         };
         StringBuilder str = new StringBuilder();
-        for (int i = 0; i < poemArr.length; i++) {
-            str.append(poemArr[i] + "\n");
+        for (String s: poemArr) {
+            str.append(s);
         }
         System.out.println(str);
     }
