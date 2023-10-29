@@ -8,6 +8,11 @@ public class Computer {
 
     public int weight = 2;
 
+    public Computer(String color) {
+        System.out.println("我是Computer基类的无参构造方法，如果我存在，子类会自动调用我");
+        this.color = color;
+    }
+
     public String getColor() {
         return color;
     }
@@ -45,5 +50,9 @@ public class Computer {
         System.out.println("电脑价格：" + this.price);
         System.out.println("电脑系统：" + this.system);
         System.out.println("电脑尺寸：" + this.size);
+    }
+
+    public void getWeightInfo() {
+        System.out.println("父类的getWeightInfo：" + this.weight);
     }
 }
