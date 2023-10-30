@@ -15,5 +15,8 @@ public class Test {
         System.out.println(people.speed);
         System.out.println(dog.speed);
         System.out.println(animal.speed);
+
+        System.out.println("dog 是否为Dog类的实例：" + (dog instanceof Dog));
+        System.out.println("dog 是否为Human类的实例：" + (dog instanceof Human));
     }
 }
